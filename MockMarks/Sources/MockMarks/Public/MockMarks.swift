@@ -1,15 +1,3 @@
-/**
- Recording:
- - Enable via the app, needs a method on MockMarks.
- - When a call is made, don't serve a mock. Instead, capture the response in the Session.
- - Need to change the JSON structure "stub" is not granular enough.
- - How should Error be represented in the JSON? Just a localized description? Anything more?
- - Once this is done, update all the examples.
- - Record the response, make JSON, write it to a file somewhere somehow.
- - Fail the mock superclass for any test by default if record mode is on. Can do this in setUp in the superclass.
- - Write some examples and tests that return different status codes and errors.
-**/
-
 import Foundation
 
 /// The `MockMarks` enum is the core of the library, and allows you to queue stubbed responses

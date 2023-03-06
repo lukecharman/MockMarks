@@ -10,10 +10,13 @@ let package = Package(
             targets: ["MockMarks+XCUI"]
         ),
     ],
+    dependencies: [
+      .package(name: "MockMarks", path: "../MockMarks")
+    ],
     targets: [
         .target(
             name: "MockMarks+XCUI",
-            dependencies: []
+            dependencies: ["MockMarks"]
         )
     ]
 )

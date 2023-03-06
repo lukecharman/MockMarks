@@ -5,6 +5,13 @@
 * Decide on how error is represented in the json.
 * Write some decent documentation including "What can i mock?" list of things in the JSON that are acceptable
 
+ Recording:
+ - Enable via the app, needs a method on MockMarks.
+ - When a call is made, don't serve a mock. Instead, capture the response in the Session.
+ - Record the response, make JSON, write it to a file somewhere somehow.
+ - Fail the mock superclass for any test by default if record mode is on. Can do this in setUp in the superclass.
+ - Write some examples and tests that return different status codes and errors.
+
 ## What is MockMarks?
 
 MockMarks is a pair of Swift packages used to easily create local, stubbed responses to network calls made via `URLSession`. These are managed entirely within Xcode, and no HTTP server or other intermediary is required. Using MockMarks, you can:

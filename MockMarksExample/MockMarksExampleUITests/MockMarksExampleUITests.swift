@@ -4,6 +4,11 @@ import MockMarks_XCUI
 
 class MockMarksExampleUITests: MockMarksUITestCase {
 
+  override public class func setUp() {
+    super.setUp()
+    isRecording = false
+  }
+
   func test_singleResponse() {
     XCTAssert(stubbedText.waitForExistence(timeout: 1))
   }

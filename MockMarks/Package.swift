@@ -19,6 +19,7 @@ let package = Package(
             dependencies: ["MockMarks"],
             resources: [
               .process("Resources")
-            ]),
+            ]
+        ),
     ]
 )
