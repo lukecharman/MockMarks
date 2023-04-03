@@ -28,7 +28,7 @@ class Writer: WriterInterface {
 
   func write(recordings: [[String: Any]]) throws {
     guard let path, let file else { throw WriterError.filePathNotFound }
-    guard let data = try? JSONSerialization.data(withJSONObject: recordings) else {
+    guard let data = try? JSONSerialization.data(withJSONObject: recordings, options: .prettyPrinted) else {
       throw WriterError.couldNotSerializeJSON
     }
 
