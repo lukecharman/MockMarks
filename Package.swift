@@ -10,13 +10,9 @@ let package = Package(
             targets: ["MockMarks"]
         ),
     ],
-    dependencies: [
-      .package(url: "https://github.com/Realm/SwiftLint", branch: "main"),
-    ],
     targets: [
         .target(
-            name: "MockMarks",
-            plugins: [.plugin(name: "SwiftLintPlugin", package: "SwiftLint")]
+            name: "MockMarks"
         ),
         .testTarget(
             name: "MockMarksTests",
