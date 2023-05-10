@@ -44,6 +44,7 @@ public class Session: URLSession, SessionInterface {
     with request: URLRequest,
     completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void
   ) -> URLSessionDataTask {
+    fatalError()
     let superTask = urlSession.dataTask(with: request, completionHandler: { [weak self] data, response, error in
       guard let self else { return }
       if self.recorder.shouldRecord, let url = request.url {
