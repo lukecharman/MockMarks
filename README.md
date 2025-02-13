@@ -12,7 +12,7 @@ Using MockMarks, you can:
 
 ## 🧱 And how do I implement it?
 
-`MockMarks` and its sister package `MockMarks+XCUI` are added as dependencies of your `App` and its `AppUITests`
+`MockMarks` and its sister package `MockMarksXCUI` are added as dependencies of your `App` and its `AppUITests`
 targets respectively. They're only a few kilobytes in size and will have no major impact on the size of your release
 binary in the App Store. MockMarks works best when your app uses a shared instance of `URLSession`, as in this case,
 you only need `import MockMarks` once. To get up and running:
