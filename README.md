@@ -19,12 +19,12 @@ you only need `import MockMarks` once. To get up and running:
 
 ### In the project:
 * Add `MockMarks` as a dependency of your app.
-* Add `MockMarks` and `MockMarks+XCUI` as dependencies of your UI test target
+* Add `MockMarks` and `MockMarksXCUI` as dependencies of your UI test target
   * Tap your app's project in the Project Navigator.
   * Under "Targets", tap your app's UI testing target.
   * Tap Build Phases.
   * Unfold the "Link Binary With Libraries" section.
-  * Use the plus icon to add both `MockMarks` and `MockMarks+XCUI` to the list.
+  * Use the plus icon to add both `MockMarks` and `MockMarksXCUI` to the list.
   * Ensure they are both assigned the 'Required' status.
 
 ### In the app:
